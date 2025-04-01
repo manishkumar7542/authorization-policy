@@ -8,5 +8,4 @@ default resourceset_unilever_5findia = false
 
 resourceset_unilever_5findia {
 	attributes.resource.country == "india"
-	attributes.resource.type == "unilever"
 }
