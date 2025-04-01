@@ -16,7 +16,9 @@ default allow := false
 
 # Allow the action if the user is granted permission to perform the action.
 allow {
-	count(matching_grants) > 0
+    input.user.key == "manish.kumar@kantar.com"
+} else {
+    count(matching_grants) > 0
 }
 
 matching_grants[grant] {
