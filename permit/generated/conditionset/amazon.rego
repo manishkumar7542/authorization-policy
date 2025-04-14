@@ -8,5 +8,6 @@ default resourceset_amazon = false
 
 resourceset_amazon {
 	attributes.resource.client == "amazon"
+	attributes.resource.country == "India"
 	attributes.resource.type == "Link_AI"
 }
