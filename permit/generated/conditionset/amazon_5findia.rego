@@ -8,7 +8,6 @@ default resourceset_amazon_5findia = false
 
 resourceset_amazon_5findia {
 	attributes.resource.client == "amazon"
-	attributes.resource.country == "India"
 	attributes.resource.client == "amazon"
 	attributes.resource.type == "Link_AI"
 }
