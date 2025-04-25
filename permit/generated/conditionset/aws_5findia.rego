@@ -8,6 +8,6 @@ default resourceset_aws_5findia = false
 
 resourceset_aws_5findia {
 	attributes.resource.country == attributes.user.country
-	attributes.resource.brand == attributes.user.Brand
+	attributes.resource.brand == attributes.user.brand
 	attributes.resource.type == "Link_AI"
 }
