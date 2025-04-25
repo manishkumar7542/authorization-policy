@@ -15,10 +15,5 @@ package permit.custom
 
 import future.keywords.in
 
-custom_user_attributes["brand"] := brand {
-    brand := data.user-key-attributes["manish.kumar@kantar.com"].attributes.brand
-}
-
-custom_user_attributes["country"] := country {
-    country := data.user-key-attributes["manish.kumar@kantar.com"].attributes.country
-}
+custom_user_attributes["brand"] := data["user-key-attributes"][input.user.key].attributes.brand
+custom_user_attributes["country"] := data["user-key-attributes"][input.user.key].attributes.country
