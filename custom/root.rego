@@ -18,9 +18,9 @@ default allow := false
 import future.keywords.in
 
 custom_user_attributes["brand"] := brand {
-    brand := data.user-key-attributes[input.user.key].attributes.Brand
+    brand := data.user-key-attributes["manish.kumar@kantar.com"].attributes.brand
 }
 
 custom_user_attributes["country"] := country {
-    country := data.user-key-attributes[input.user.key].attributes.country
+    country := data.user-key-attributes["manish.kumar@kantar.com"].attributes.country
 }
