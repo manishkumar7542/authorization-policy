@@ -14,3 +14,13 @@ default allow := false
 #     # if my_custom_rule is true, EVEN IF policies.allow is false.
 #     my_custom_rule
 # }
+
+import future.keywords.in
+
+custom_user_attributes["brand"] := brand {
+    brand := data.user-key-attributes[input.user.key].attributes.Brand
+}
+
+custom_user_attributes["country"] := country {
+    country := data.user-key-attributes[input.user.key].attributes.country
+}
