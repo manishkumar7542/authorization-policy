@@ -15,5 +15,14 @@ package permit.custom
 
 import future.keywords.in
 
-custom_user_attributes["brand"] := data["user-key-attributes"][input.user.key].attributes.brand
-custom_user_attributes["country"] := data["user-key-attributes"][input.user.key].attributes.country
+#custom_user_attributes["brand"] := data["user-key-attributes"][input.user.key].attributes.brand
+#custom_user_attributes["country"] := data["user-key-attributes"][input.user.key].attributes.country
+
+
+custom_user_attributes["country"] := data.userAttributes[input.user.key].country
+custom_user_attributes["brand"] := data.userAttributes[input.user.key].brand
+custom_user_attributes["city"] := data.userAttributes[input.user.key].city
+
+custom_resource_attributes["country"] := data.resourceAttributes[input.resource.key].country
+custom_resource_attributes["brand"] := data.resourceAttributes[input.resource.key].brand
+custom_resource_attributes["city"] := data.resourceAttributes[input.resource.key].city
