@@ -23,6 +23,6 @@ custom_user_attributes["country"] := data["custom-attributes"].userAttributes[in
 custom_user_attributes["brand"] := data["custom-attributes"].userAttributes[input.user.key].brand
 custom_user_attributes["city"] := data["custom-attributes"].userAttributes[input.user.key].city
 
-custom_resource_attributes["country"] := data["custom-attributes"].resourceAttributes[input.resource.key].country
-custom_resource_attributes["brand"] := data["custom-attributes"].resourceAttributes[input.resource.key].brand
-custom_resource_attributes["city"] := data["custom-attributes"].resourceAttributes[input.resource.key].city
+custom_resource_attributes["country"] := data["custom-attributes"].resourceAttributes[input.resource.type].country
+custom_resource_attributes["brand"] := data["custom-attributes"].resourceAttributes[input.resource.type].brand
+custom_resource_attributes["city"] := data["custom-attributes"].resourceAttributes[input.resource.type].city
