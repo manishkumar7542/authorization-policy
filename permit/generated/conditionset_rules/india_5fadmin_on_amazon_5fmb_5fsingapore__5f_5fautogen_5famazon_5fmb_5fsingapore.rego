@@ -1,0 +1,15 @@
+package permit.generated.conditionset.rules
+
+import future.keywords.in
+
+import data.permit.generated.abac.utils.attributes
+import data.permit.generated.abac.utils.condition_set_permissions
+import data.permit.generated.conditionset
+
+default india_5f5fadmin_5fon_5famazon_5f5fmb_5f5fsingapore_5f_5f5f_5f5fautogen_5f5famazon_5f5fmb_5f5fsingapore = false
+
+india_5f5fadmin_5fon_5famazon_5f5fmb_5f5fsingapore_5f_5f5f_5f5fautogen_5f5famazon_5f5fmb_5f5fsingapore {
+	conditionset.userset_india_5fadmin
+	conditionset.resourceset__5f_5fautogen_5famazon_5fmb_5fsingapore
+	input.action in condition_set_permissions.india_admin.__autogen_amazon_mb_singapore[input.resource.type]
+}

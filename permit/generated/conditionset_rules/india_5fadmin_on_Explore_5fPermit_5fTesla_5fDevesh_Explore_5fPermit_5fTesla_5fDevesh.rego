@@ -1,0 +1,15 @@
+package permit.generated.conditionset.rules
+
+import future.keywords.in
+
+import data.permit.generated.abac.utils.attributes
+import data.permit.generated.abac.utils.condition_set_permissions
+import data.permit.generated.conditionset
+
+default india_5f5fadmin_5fon_5fExplore_5f5fPermit_5f5fTesla_5f5fDevesh_5fExplore_5f5fPermit_5f5fTesla_5f5fDevesh = false
+
+india_5f5fadmin_5fon_5fExplore_5f5fPermit_5f5fTesla_5f5fDevesh_5fExplore_5f5fPermit_5f5fTesla_5f5fDevesh {
+	conditionset.userset_india_5fadmin
+	conditionset.resourceset_Explore_5fPermit_5fTesla_5fDevesh
+	input.action in condition_set_permissions.india_admin.Explore_Permit_Tesla_Devesh[input.resource.type]
+}
